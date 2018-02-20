@@ -1,11 +1,16 @@
+body {
+  width: 100%;
+}
+
 .dflt-styles {
   text-align: center;
   float: left;
 }
 
-img {
-  max-width: 1020px;
-  margin: 0 auto;
+.single-img-slider img {
+  max-width: 1500px;
+  height: auto;
+  width: 100%;
 }
 
 .single-img-slider .slick-prev:before, .slick-next:before {
@@ -13,13 +18,11 @@ img {
 }
 
 .single-img-slider .slick-prev {
-  margin-left: 200px;
   left: 25px !important;
   z-index: 99999;
 }
 
 .single-img-slider .slick-next {
-  margin-right: 200px;
   right: 25px !important;
   z-index: 99999;
 }

@@ -21,40 +21,21 @@
     $(function() {
       $('.single-img-slider').slick({
         arrows: true,
-        dots: true
-      });
-    });
-  </script>
-
-  <!-- <script>
-    $(function() {
-      $('.single-img-slider').slick({
         dots: false,
-        arrows: false,
-        infinite: false,
-        speed: 300,
-        slidesToShow: 4,
-        slidesToScroll: 2,
-        variableWidth: true,
-        swipeToSlide: true,
-        autoplay: false,
+        autoplay: true,
+        autoplaySpeed: 4000,
         responsive: [{
-            breakpoint: 1020,
+            breakpoint: 767,
             settings: {
-              slidesToScroll: 2,
-            }
-          },
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
+              arrows: false,
+              dots: true
             }
           }
         ]
       });
     });
-  </script> -->
+  </script>
+
 
   <div class="single-img-slider">
     <div class="dflt-styles">
