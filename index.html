@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>slider test</title>
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href=./slick.css>
+  <link rel="stylesheet" type="text/css" href=./slick-theme.css>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+  <h1>Full Screen Image Carousel Testing Zone</h1>
+  <br>
+  <br>
+
+  <script>
+    $(function() {
+      $('.single-img-slider').slick({
+        arrows: true,
+        dots: true
+      });
+    });
+  </script>
+
+  <!-- <script>
+    $(function() {
+      $('.single-img-slider').slick({
+        dots: false,
+        arrows: false,
+        infinite: false,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 2,
+        variableWidth: true,
+        swipeToSlide: true,
+        autoplay: false,
+        responsive: [{
+            breakpoint: 1020,
+            settings: {
+              slidesToScroll: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script> -->
+
+  <div class="single-img-slider">
+    <div class="dflt-styles">
+      <a class="img-link" href="#">
+        <img src="./img/fs-1.jpg" alt="">
+      </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="#">
+        <img src="./img/fs-2.jpg" alt="">
+      </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="#">
+        <img src="./img/fs-3.jpg" alt="">
+      </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="#">
+        <img src="./img/fs-4.jpg" alt="">
+      </a>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="./slick.min.js"></script>
+  <script type="text/javascript" src="./index.js"></script>
+
+</body>
+
+</html>

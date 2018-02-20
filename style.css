@@ -1,0 +1,25 @@
+.dflt-styles {
+  text-align: center;
+  float: left;
+}
+
+img {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.single-img-slider .slick-prev:before, .slick-next:before {
+  color: white !important;
+}
+
+.single-img-slider .slick-prev {
+  margin-left: 75px;
+  left: 25px !important;
+  z-index: 99999;
+}
+
+.single-img-slider .slick-next {
+  margin-right: 75px;
+  right: 25px !important;
+  z-index: 99999;
+}
