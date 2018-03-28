@@ -17,6 +17,27 @@
   <br>
   <br>
 
+  <style>
+  .single-img-slider img {
+    height: auto;
+    width: 100%;
+  }
+
+  .single-img-slider .slick-prev:before, .slick-next:before {
+    color: white !important;
+  }
+
+  .single-img-slider .slick-prev {
+    left: 25px !important;
+    z-index: 99999;
+  }
+
+  .single-img-slider .slick-next {
+    right: 25px !important;
+    z-index: 99999;
+  }
+  </style>
+
   <script>
     $(function() {
       $('.single-img-slider').slick({
