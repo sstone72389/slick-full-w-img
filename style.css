@@ -2,13 +2,13 @@ body, html {
   width: 100%;
 }
 
-.dflt-styles {
+/* .dflt-styles {
   text-align: center;
   float: left;
-}
+} */
 
 .single-img-slider img {
-  max-width: 1500px;
+  /* max-width: 1500px; */
   height: auto;
   width: 100%;
 }
