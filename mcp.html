@@ -395,7 +395,80 @@ Hawk Recommendation Rules
 @media screen and (max-width: 767px) {
     .hawk-recommendation { margin: 0 15px; }
 }
+
+/*=================================================
+Slider (full width) Rules
+=================================================== */
+.dflt-styles {
+  text-align: center;
+  float: left;
+}
+.single-img-slider img {
+  height: auto;
+  width: 100%;
+  max-width: 1500px;
+}
+.single-img-slider .slick-prev:before, .slick-next:before {
+  color: white !important;
+}
+.single-img-slider .slick-prev {
+  left: 25px !important;
+  z-index: 99999;
+}
+.single-img-slider .slick-next {
+  right: 25px !important;
+  z-index: 99999;
+}
+.slick-dots {
+    bottom: -40px;
+  }
 </style>
+
+<!-- =================================================
+Slider (full width) script
+=================================================== -->
+
+<script>
+  $(function() {
+    $('.single-img-slider').slick({
+      arrows: true,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      responsive: [{
+          breakpoint: 767,
+          settings: {
+            arrows: false,
+            dots: true
+          }
+        }
+      ]
+    });
+  });
+</script>
+
+<div class="single-img-slider">
+  <div class="dflt-styles">
+    <a class="img-link" href="#">
+      <img src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/ss-test/fs-1.jpg" alt="">
+    </a>
+  </div>
+  <div class="dflt-styles">
+    <a class="img-link" href="#">
+      <img src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/ss-test/fs-2.jpg" alt="">
+    </a>
+  </div>
+  <div class="dflt-styles">
+    <a class="img-link" href="#">
+      <img src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/ss-test/fs-3.jpg" alt="">
+    </a>
+  </div>
+  <div class="dflt-styles">
+    <a class="img-link" href="#">
+      <img src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/ss-test/fs-4.jpg" alt="">
+    </a>
+  </div>
+</div>
 
 <div class="support-content" style="margin:0;background-color: #fff;">
     <!-- TOP A 1000x200 / 1000x100  -->
