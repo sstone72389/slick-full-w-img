@@ -410,7 +410,7 @@ Slider CSS Rules
 
   .single-img-slider,
   .single-img-slider-m {
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 0 auto;
     display: none;
   }
@@ -439,7 +439,6 @@ Slider CSS Rules
     color: white !important;
   }
 
-
   .single-img-slider .slick-prev {
     left: 25px !important;
     z-index: 99999;
@@ -461,8 +460,9 @@ Slider CSS Rules
   }
 
   .slick-dots {
-    bottom: -40px;
+    bottom: -50px;
   }
+
   .single-img-slider-m .slick-dots {
     bottom: 0px;
   }
@@ -471,15 +471,18 @@ Slider CSS Rules
     color: lightgray;
   }
 
-  .single-img-slider-m .slick-dots li button:before {
-    color: white;
-  }
-  .single-img-slider .slick-dotted.slick-slider {
-    margin-bottom: 25px;
+  .single-img-slider .slick-dots li button:before {
+    font-size: 15px;
   }
 
-  .single-img-slider-m .slick-dotted.slick-slider {
-    margin-bottom: 5px;
+  .single-img-slider-m .slick-dots li button:before {
+    color: white;
+    font-size: 6px;
+
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 25px;
   }
 
   @media screen and (max-width: 767px) {
@@ -488,6 +491,9 @@ Slider CSS Rules
     }
     .single-img-slider-m {
       display: block;
+    }
+    .slick-dotted.slick-slider {
+      margin-bottom: 5px;
     }
   }
 
@@ -502,7 +508,7 @@ Slider CSS Rules
 </style>
 
 <!-- =================================================
-Slider script
+Slider scripts
 =================================================== -->
 
 <script>
@@ -530,9 +536,36 @@ Slider script
       autoplaySpeed: 4000
     });
   });
+
+  $(function() {
+    $('.single-img-slider-c').slick({
+      arrows: true,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      responsive: [{
+        breakpoint: 767,
+        settings: {
+          arrows: false,
+          dots: true
+        }
+      }]
+    });
+  });
+
+  $(function() {
+    $('.single-img-slider-m-c').slick({
+      arrows: false,
+      dots: true,
+      autoplay: true,
+      autoplaySpeed: 4000
+    });
+  });
 </script>
 
 <div class="support-content" style="margin:0;background-color: #fff;">
+
+  <!-- b marketing -->
   <div class="single-img-slider" style="padding-top:5px;">
     <div class="dflt-styles">
       <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
@@ -560,6 +593,7 @@ Slider script
     </div>
   </div>
 
+  <!-- mobile-b -->
   <div class="single-img-slider-m" style="padding-top:5px;">
     <div class="dflt-styles">
       <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
@@ -582,6 +616,61 @@ Slider script
             </a>
     </div>
   </div>
+  <!-- end b -->
+
+  <!-- c marketing  must duplicate stykles properly-->
+
+  <div class="single-img-slider-m-c" style="display:none;padding-top:5px;">
+    <div class="dflt-styles">
+      <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
+              <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/BAUER-SALE.jpg" alt="">
+              <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-BAUER-SALE.jpg" alt="">
+              </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
+              <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/SUPERDEKER.jpg" alt="">
+              <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-SUPERDEKER.jpg" alt="">
+            </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
+              <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/SPRING-APPARREL.jpg" alt="">
+              <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-APPAREL.jpg" alt="">
+            </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
+              <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/TRUE.jpg" alt="">
+              <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-TRUE.jpg" alt="">
+            </a>
+    </div>
+  </div>
+
+  <!-- mobile c -->
+  <div class="single-img-slider-m-c" style="display:none;padding-top:5px;">
+    <div class="dflt-styles">
+      <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
+            <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-BAUER-SALE.jpg" alt="">
+            </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
+            <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-SUPERDEKER.jpg" alt="">
+          </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
+            <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-APPAREL.jpg" alt="">
+          </a>
+    </div>
+    <div class="dflt-styles">
+      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
+                <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-TRUE.jpg" alt="">
+              </a>
+    </div>
+  </div>
+  <!-- end c  -->
 
   <!-- TOP A 1000x200 / 1000x100  -->
   <div class="row">
