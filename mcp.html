@@ -421,6 +421,7 @@ Slider CSS Rules
   }
 
   .slider-dflt-m img {
+    margin-bottom: 25px;
     height: auto;
     width: 100%;
   }
@@ -463,26 +464,34 @@ Slider CSS Rules
     bottom: -50px;
   }
 
-  .slider-dflt-m .slick-dots {
-    bottom: 0px;
+ .slider-dflt-m .slick-dots {
+    padding-bottom: 15px;
   }
 
-  .slider-dflt-m .slick-dots li.slick-active button:before {
+  /* .slider-dflt-m .slick-dots li.slick-active button:before {
     color: lightgray;
-  }
+  } */
+
+  .slick-dots li button:focus:before {
+       opacity: 0.25;
+   }
+
+   .slick-dots li.slick-active button:focus:before {
+       opacity: .75;
+       color: #000;
+   }
 
   .slider-dflt .slick-dots li button:before {
     font-size: 15px;
   }
 
   .slider-dflt-m .slick-dots li button:before {
-    color: white;
-    font-size: 6px;
+    font-size: 15px;
 
   }
 
   .slick-dotted.slick-slider {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
   }
 
   @media screen and (max-width: 767px) {
@@ -491,9 +500,6 @@ Slider CSS Rules
     }
     .single-img-slider-m {
       display: block;
-    }
-    .slick-dotted.slick-slider {
-      margin-bottom: 5px;
     }
   }
 
