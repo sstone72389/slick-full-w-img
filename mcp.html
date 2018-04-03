@@ -426,9 +426,17 @@ Slider CSS Rules
     width: 100%;
   }
 
-  .slick-initialized {
-    display: block;
+  .slider-dflt {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 1s ease;
+      -webkit-transition: opacity 1s ease;
   }
+
+  .slider-dflt.slick-initialized {
+    visibility: visible;
+    opacity: 1;
+}
 
   .slider-dflt .slick-prev:before,
   .slick-next:before {
@@ -464,7 +472,7 @@ Slider CSS Rules
     bottom: -50px;
   }
 
- .slider-dflt-m .slick-dots {
+  .slider-dflt-m .slick-dots {
     padding-bottom: 15px;
   }
 
@@ -473,13 +481,13 @@ Slider CSS Rules
   } */
 
   .slick-dots li button:focus:before {
-       opacity: 0.25;
-   }
+    opacity: 0.25;
+  }
 
-   .slick-dots li.slick-active button:focus:before {
-       opacity: .75;
-       color: #000;
-   }
+  .slick-dots li.slick-active button:focus:before {
+    opacity: .75;
+    color: #000;
+  }
 
   .slider-dflt .slick-dots li button:before {
     font-size: 15px;
@@ -572,181 +580,187 @@ Slider scripts
 <div class="support-content" style="margin:0;background-color: #fff;">
 
   <!-- b marketing -->
-  <div class="single-img-slider slider-dflt" style="padding-top:5px;">
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
+  <div class="mon-wrapper">
+    <div class="single-img-slider slider-dflt" style="padding-top:5px;">
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
             <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/TRUE.jpg" alt="">
             <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-TRUE.jpg" alt="">
           </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
             <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/BAUER-SALE.jpg" alt="">
             <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-BAUER-SALE.jpg" alt="">
             </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
             <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/SPRING-APPARREL.jpg" alt="">
             <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-APPAREL.jpg" alt="">
           </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
             <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/SUPERDEKER.jpg" alt="">
             <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-SUPERDEKER.jpg" alt="">
           </a>
+      </div>
     </div>
   </div>
 
   <!-- mobile-b -->
-  <div class="single-img-slider-m slider-dflt-m" style="padding-top:5px;">
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
+  <div class="mon-wrapper">
+    <div class="single-img-slider-m slider-dflt-m" style="padding-top:5px;">
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
               <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-TRUE.jpg" alt="">
             </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
               <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-BAUER-SALE.jpg" alt="">
               </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
               <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-APPAREL.jpg" alt="">
             </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
               <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-SUPERDEKER.jpg" alt="">
             </a>
+      </div>
     </div>
   </div>
   <!-- end b -->
 
   <!-- c marketing  must duplicate stykles properly-->
-
-  <div class="single-img-slider-c slider-dflt" style="display:none;padding-top:5px;">
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
+  <div class="mon-wrapper">
+    <div class="single-img-slider-c slider-dflt" style="display:none;padding-top:5px;">
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
               <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/BAUER-SALE.jpg" alt="">
               <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-BAUER-SALE.jpg" alt="">
               </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
               <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/SUPERDEKER.jpg" alt="">
               <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-SUPERDEKER.jpg" alt="">
             </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
               <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/SPRING-APPARREL.jpg" alt="">
               <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-APPAREL.jpg" alt="">
             </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
               <img class="desktop-slide-b" src="https://www.purehockey.com/ui/Content/sliders/TRUE.jpg" alt="">
               <img class="mobile-slide-b" style="display:none;" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-TRUE.jpg" alt="">
             </a>
+      </div>
     </div>
   </div>
 
   <!-- mobile c -->
-  <div class="single-img-slider-m-c slider-dflt-m" style="display:none;padding-top:5px;">
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
+  <div class="mon-wrapper">
+    <div class="single-img-slider-m-c slider-dflt-m" style="display:none;padding-top:5px;">
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/c/bauer-hockey-equipment-sale">
             <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-BAUER-SALE.jpg" alt="">
             </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?category_1=Accessories&category_2=Accessories%2fTraining+Aids">
             <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-SUPERDEKER.jpg" alt="">
           </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=Pure+Hockey&sort=first_purch_dt_desc&category_1=Apparel%2cHats">
             <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-APPAREL.jpg" alt="">
           </a>
-    </div>
-    <div class="dflt-styles">
-      <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
+      </div>
+      <div class="dflt-styles">
+        <a class="img-link" href="https://www.purehockey.com/search.aspx?mfg_web_name=TRUE&category_1=Sticks&category_2=Sticks%2fComposite+Sticks&sort=first_purch_dt_desc&chan_id=6">
                 <img class="mobile-slide-b" src="https://www.purehockey.com/ui/Content/sliders/MOBILE-TRUE.jpg" alt="">
               </a>
+      </div>
     </div>
-  </div>
-  <!-- end c  -->
+    <!-- end c  -->
 
-  <!-- TOP A 1000x200 / 1000x100  -->
-  <div class="row">
-    <div id="section-b">
-      <div class="column_b grid_12 st offset full_w_nm">
-        <div class="column_b grid_12 full_w_nm">
-          <div class="b-block c_container">
-            <a href="/support/retailnews/pg_id/60134">
-              <!-- Desktop -->
-              <img alt="Retail News" class="desktop-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PG_2_22_mainpage_B2_v3.jpg" />
-              <!-- Mobile -->
-              <img alt="Retail News" class="mobile-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_2_22_mobile_retailnews_finalv3.jpg" />
-              <!--                             <div class="mobile-block">
+    <!-- TOP A 1000x200 / 1000x100  -->
+    <div class="row">
+      <div id="section-b">
+        <div class="column_b grid_12 st offset full_w_nm">
+          <div class="column_b grid_12 full_w_nm">
+            <div class="b-block c_container">
+              <a href="/support/retailnews/pg_id/60134">
+                <!-- Desktop -->
+                <img alt="Retail News" class="desktop-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PG_2_22_mainpage_B2_v3.jpg" />
+                <!-- Mobile -->
+                <img alt="Retail News" class="mobile-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_2_22_mobile_retailnews_finalv3.jpg" />
+                <!--                             <div class="mobile-block">
                                 <p class="large">#</p>
                                 <p>#</p>
                             </div> -->
-            </a>
+              </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="column_b grid_12 st offset full_w_nm">
-        <div class="column_b grid_12 full_w_nm">
-          <div class="b-block c_container">
-            <a href="/c/bauer-hockey-equipment-sale">
-              <!-- Desktop -->
-              <img alt="Bauer End-Of-Season Sale" class="desktop-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_B2.jpg" />
-              <!-- Mobile -->
-              <img alt="Bauer End-Of-Season Sale" class="mobile-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_mobile_B2.jpg" />
-              <!--                             <div class="mobile-block">
+        <div class="column_b grid_12 st offset full_w_nm">
+          <div class="column_b grid_12 full_w_nm">
+            <div class="b-block c_container">
+              <a href="/c/bauer-hockey-equipment-sale">
+                <!-- Desktop -->
+                <img alt="Bauer End-Of-Season Sale" class="desktop-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_B2.jpg" />
+                <!-- Mobile -->
+                <img alt="Bauer End-Of-Season Sale" class="mobile-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_mobile_B2.jpg" />
+                <!--                             <div class="mobile-block">
                                 <p class="large">Great Deals Ahead!</p>
                                 <p>Bauer End-Of-Season Sale</p>
                             </div> -->
-            </a>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- SECTION A 490x360  -->
-  <div class="row">
-    <div id="section-a" class="column_b grid_12 st offset">
-      <div class="column_b grid_12">
-        <div class="a-block c_container sr sm_h sm_w">
-          <a href="/c/bauer-hockey-equipment-sale?category_1=Gloves%2cProtective&category_2=Gloves%2fGloves%2cProtective%2fElbow+Pads%2cProtective%2fShoulder+Pads">
+    <!-- SECTION A 490x360  -->
+    <div class="row">
+      <div id="section-a" class="column_b grid_12 st offset">
+        <div class="column_b grid_12">
+          <div class="a-block c_container sr sm_h sm_w">
+            <a href="/c/bauer-hockey-equipment-sale?category_1=Gloves%2cProtective&category_2=Gloves%2fGloves%2cProtective%2fElbow+Pads%2cProtective%2fShoulder+Pads">
                         <img class="lazyload" alt="Bauer End-Of-Season Sale" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_A.jpg" />
                         <div>
                             <p class="large">Bauer Sale</p>
                             <p>Shoulders, Elbows, & Gloves</p>
                         </div>
                     </a>
-        </div>
-        <div class="a-block c_container sm_h sm_w">
-          <a href="/c/bauer-hockey-equipment-sale?category_1=Skates">
+          </div>
+          <div class="a-block c_container sm_h sm_w">
+            <a href="/c/bauer-hockey-equipment-sale?category_1=Skates">
                         <img class="lazyload" alt="Bauer End-Of-Season Sale" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_A2.jpg" />
                         <div>
                             <p class="large">Bauer Sale</p>
                             <p>Ice Skates</p>
                         </div>
                 </a>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- SECTION B 1000x200 / 1000x100  -->
-  <div class="row">
-    <div id="section-b">
-      <div class="column_b grid_12 st offset full_w_nm">
-        <div class="column_b grid_12 full_w_nm">
-          <div class="b-block c_container">
-            <a href="/homeice">
+    <!-- SECTION B 1000x200 / 1000x100  -->
+    <div class="row">
+      <div id="section-b">
+        <div class="column_b grid_12 st offset full_w_nm">
+          <div class="column_b grid_12 full_w_nm">
+            <div class="b-block c_container">
+              <a href="/homeice">
                             <img alt="Home Ice" class="desktop-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_1_30_18_mainpage_b1.jpg" />
                             <img alt="Home Ice" class="mobile-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_2_22_mobile_homeice.jpg" />
 <!--                             <div class="mobile-block">
@@ -754,80 +768,80 @@ Slider scripts
                                 <p>#</p>
                             </div> -->
                         </a>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="column_b grid_12 st offset full_w_nm">
-        <div class="column_b grid_12 full_w_nm">
-          <div class="b-block c_container">
-            <a href="/c/bauer-hockey-equipment-sale?category_1=Pants%2fGirdles%2cProtective&category_2=Pants%2fGirdles%2fPlayer+Pants%2cPants%2fGirdles%2fInline+Pants%2cProtective%2fShin+Guards">
-              <!-- Desktop -->
-              <img alt="Bauer Pants & Shins Sale" class="desktop-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_B1.jpg" />
-              <!-- Mobile -->
-              <img alt="Bauer Pants & Shins Sale" class="mobile-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_mobile_B1.jpg" />
-              <div class="mobile-block">
-                <p class="large">Bauer Sale</p>
-                <p>Pants, Girdles & Shin Guards</p>
-              </div>
-            </a>
+        <div class="column_b grid_12 st offset full_w_nm">
+          <div class="column_b grid_12 full_w_nm">
+            <div class="b-block c_container">
+              <a href="/c/bauer-hockey-equipment-sale?category_1=Pants%2fGirdles%2cProtective&category_2=Pants%2fGirdles%2fPlayer+Pants%2cPants%2fGirdles%2fInline+Pants%2cProtective%2fShin+Guards">
+                <!-- Desktop -->
+                <img alt="Bauer Pants & Shins Sale" class="desktop-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_B1.jpg" />
+                <!-- Mobile -->
+                <img alt="Bauer Pants & Shins Sale" class="mobile-block lazyload" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_mobile_B1.jpg" />
+                <div class="mobile-block">
+                  <p class="large">Bauer Sale</p>
+                  <p>Pants, Girdles & Shin Guards</p>
+                </div>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- SECTION C 320x320 -->
-  <div class="row">
-    <div id="section-c" class="column_b grid_12 st offset">
-      <div class="c-block c_container grid_4 sb srm xsm_h ipad_p_offset">
-        <a href="/search.aspx?category_1=NHL+Shop&category_2=NHL+Shop%2fNHL+Hats%2cNHL+Shop%2fNHL+Pullover+Hoodies%2cNHL+Shop%2fNHL+T-Shirts%2fTops&sort=first_purch_dt_desc">
+    <!-- SECTION C 320x320 -->
+    <div class="row">
+      <div id="section-c" class="column_b grid_12 st offset">
+        <div class="c-block c_container grid_4 sb srm xsm_h ipad_p_offset">
+          <a href="/search.aspx?category_1=NHL+Shop&category_2=NHL+Shop%2fNHL+Hats%2cNHL+Shop%2fNHL+Pullover+Hoodies%2cNHL+Shop%2fNHL+T-Shirts%2fTops&sort=first_purch_dt_desc">
                     <img class="lazyload" alt="NHL Apparel" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_2_22_mainpage_BRUINS.jpg" />
                     <div>
                         <p class="large">Support Your Team</p>
                         <p>NHL Apparel</p>
                     </div>
                 </a>
-      </div>
-      <div class="c-block c_container grid_4 sb srm xsm_h ipad_p_offset">
-        <a href="/search.aspx?category_1=Skates&category_2=Skates%2fInline+Skates&sort=first_purch_dt_desc">
+        </div>
+        <div class="c-block c_container grid_4 sb srm xsm_h ipad_p_offset">
+          <a href="/search.aspx?category_1=Skates&category_2=Skates%2fInline+Skates&sort=first_purch_dt_desc">
                     <img class="lazyload" alt="Inline Hockey Skates" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_C2.jpg" />
                     <div>
                         <p class="large">Lace Up & Go</p>
                         <p>Inline Hockey Skates</p>
                     </div>
                 </a>
-      </div>
-      <div class="c-block c_container grid_4 sb xsm_h">
-        <a href="/search.aspx?category_1=Apparel&category_2=Apparel%2fT-Shirts%2fTops%2cApparel%2fPants%2cApparel%2fPure+Hockey+Tee+Shirts&sort=first_purch_dt_desc">
+        </div>
+        <div class="c-block c_container grid_4 sb xsm_h">
+          <a href="/search.aspx?category_1=Apparel&category_2=Apparel%2fT-Shirts%2fTops%2cApparel%2fPants%2cApparel%2fPure+Hockey+Tee+Shirts&sort=first_purch_dt_desc">
                     <img class="lazyload" alt="Spring Lifestyle Apparel" src="https://res.cloudinary.com/pure-hockey/image/fetch/q_auto,f_auto,fl_lossy/https%3A//www.purehockey.com/ui/PH_3_15_18_mainpage_C3_v2.jpg" />
                     <div>
                         <p class="large">Dress For Success</p>
                         <p>Spring Lifestyle Apparel</p>
                     </div>
                 </a>
+        </div>
       </div>
     </div>
+    <!-- column grid_12 close -->
   </div>
-  <!-- column grid_12 close -->
-</div>
 
-<!-- RECENTLY VIEWED WIDGET -->
-<!-- SDD:NOTE:This is the original html block, saved for future reference
+  <!-- RECENTLY VIEWED WIDGET -->
+  <!-- SDD:NOTE:This is the original html block, saved for future reference
 <div class="row">
     <div class="column_b grid_12 st offset">
         <div align="center" class="hawk-recommendation" data-widgetguid="444a1088-7403-4e7c-8dbe-5cb0efc2c009" style="max-width:1000px;"></div>
     </div>
 </div>-->
-<div class="row">
-  <div class="column grid_12">
-    <div class="hawk-recommendation" data-widgetguid="444a1088-7403-4e7c-8dbe-5cb0efc2c009"></div>
+  <div class="row">
+    <div class="column grid_12">
+      <div class="hawk-recommendation" data-widgetguid="444a1088-7403-4e7c-8dbe-5cb0efc2c009"></div>
+    </div>
   </div>
-</div>
-<!-- RECENTLY VIEWED WIDGET -->
+  <!-- RECENTLY VIEWED WIDGET -->
 
-<!-- OLAPIC WIDGET -->
-<div id="olapic_specific_widget"></div>
-<script type="text/javascript" src="https://photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js" data-olapic="olapic_specific_widget" data-instance="8d35044f5ed911604726cf4ad6a8d7a5" data-apikey="13ebe7bd31ae31fe4d33fd64e821a96307970329d23a325038e0927099d888c6"
-  async="async"></script>
+  <!-- OLAPIC WIDGET -->
+  <div id="olapic_specific_widget"></div>
+  <script type="text/javascript" src="https://photorankstatics-a.akamaihd.net/81b03e40475846d5883661ff57b34ece/static/frontend/latest/build.min.js" data-olapic="olapic_specific_widget" data-instance="8d35044f5ed911604726cf4ad6a8d7a5" data-apikey="13ebe7bd31ae31fe4d33fd64e821a96307970329d23a325038e0927099d888c6"
+    async="async"></script>
 </div>
 <!-- END OLAPIC WIDGET -->
 <!-- SHOP BY CATEGORY GRID D-->
